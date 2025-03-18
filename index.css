@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/stadion.webp");
+    background-color: rgba(0, 0, 0, 0.540);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 35px;
+    color: white;
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu a {
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: yellow;
+    transition: width 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.menu a:hover::after {
+    animation: chiziqChizish 0.5s forwards;
+}
+
+.animatsiya {
+    font-family: "Audiowide", serif;
+    font-size: 50px;
+    color: white;
+    max-width: 40ch;
+    text-align: center;
+    opacity: 0;
+    animation: matnYuqoridan 1s ease forwards;
+}
+
+.murojat {
+    width: 200px;
+    height: 70px;
+    background-color: rgb(47, 102, 174);
+    color: white;
+    font-family: "Audiowide", serif;
+    transition: background 0.3s ease;
+}
+
+.murojat:hover {
+    animation: tugmaTezlash 0.5s infinite;
+    background-color: rgb(255, 69, 0);
+}
+
+@keyframes matnYuqoridan {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tugmaTezlash {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes chiziqChizish {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@media (max-width: 1024px) {
+    .menu {
+        gap: 20px;
+    }
+    .menu a {
+        font-size: 24px;
+    }
+    .animatsiya {
+        font-size: 40px;
+    }
+    .murojat {
+        width: 180px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+    .animatsiya {
+        font-size: 35px;
+    }
+    .murojat {
+        width: 160px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu a {
+        font-size: 18px;
+    }
+    .animatsiya {
+        font-size: 28px;
+        max-width: 30ch;
+    }
+    .murojat {
+        width: 140px;
+        height: 50px;
+    }
+}

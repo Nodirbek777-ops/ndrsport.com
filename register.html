@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro‘yxatdan o‘tish</title>
+    <link rel="stylesheet" href="REGISTER.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Ro‘yxatdan o‘tish</h2>
+        <form action="index.html" method="">
+            <div class="input-group">
+                <label for="surname">Familiya</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="name">Ism</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="birthdate">Tug‘ilgan sana</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Telefon raqam</label>
+                <input type="tel" id="phone" name="phone" placeholder="+998901234567" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Parol</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Parolni tasdiqlang</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Jins</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Erkak</option>
+                    <option value="female">Ayol</option>
+                </select>
+            </div>
+            <button type="submit">Yuborish</button>
+        </form>
+    </div>
+</body>
+</html>

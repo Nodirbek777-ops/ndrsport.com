@@ -1,0 +1,375 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header { 
+    background-image: url("images/stadion.webp");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img1{
+    width: 60px;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.sarlavha{
+    position: relative;
+    left: -350px;
+    top: 50px;
+    font-size: 30px;
+}
+
+
+.hover-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-img:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    margin-top: 20px;
+}
+.yangilik {
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.yangilik h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.yangi11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.y1 {
+    width: 30%;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.y1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.y1 h3 {
+    font-size: 18px;
+    color: #222;
+    margin: 10px;
+}
+
+.y1 p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 10px 10px;
+}
+
+.y1 a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+}
+
+.y1 a:hover {
+    background: #0056b3;
+}
+.href{
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    position: relative;
+    left: -400px;
+    top: 40px;
+    font-size: 30px;
+    color: white;
+    top: -7px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 45px;
+    
+    
+}
+
+.menu a {
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    top: -100px;
+    text-shadow: 20px;
+}
+@keyframes headerGradient {
+    0% { background-color: rgba(0, 0, 0, 0.5); }
+    100% { background-color: rgba(50, 50, 50, 0.7); }
+}
+
+.menu a {
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    text-shadow: 20px;
+}
+
+.menu a p {
+    position: relative;
+    display: inline-block;
+}
+
+.menu a p::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.menu a:hover p::after {
+    width: 100%;
+}
+
+.tennis {
+    position: relative;
+    animation: textAppear 1.5s ease-in-out;
+    left: -310px;
+    top: 10px;
+}
+
+.rasm1 {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: textAppear 1.5s ease-in-out;
+}
+
+.rasm1 img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rasm1 img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.nav-menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+.kontiner{
+    margin-left: 800px;
+}
+.menu{
+    margin-right: 1000px;
+    margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        width: 95%;
+        padding: 12px;
+    }
+}
+header {
+    animation: sekinPaydoBolish 1.5s ease-in-out;
+}
+h2, h3 {
+    animation: pastdanTepaga 1s ease-in-out;
+}
+p, li {
+    animation: chapdanSiljish 1s ease-in-out;
+}
+
+.hover-img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+.y1 {
+    animation: sekinPaydoBolish 2s ease-in-out;
+}
+a {
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #ff6600;
+    color: #fff;
+    transform: scale(1.05);
+    animation: tebranish 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes sekinPaydoBolish {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pastdanTepaga {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes chapdanSiljish {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tebranish {
+    from {
+        transform: translateX(-2px);
+    }
+    to {
+        transform: translateX(2px);
+    }
+}

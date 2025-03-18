@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    transition: width 0.4s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/stadion.webp");
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: bosh 3s infinite alternate;
+}
+
+.kontiner a {
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.menu a {
+    font-family: "Audiowide", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    padding: 5px 15px;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.text h1 {
+    font-size: 32px;
+    color: #333;
+    animation: tekst 1s ease-in-out;
+}
+
+.text p {
+    font-size: 16px;
+    color: #666;
+}
+
+.rasm {
+    width: 35%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rasm img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rasm img:hover {
+    transform: scale(1.1);
+}
+
+.yangilik {
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.yangilik h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.yangi11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.y1 {
+    width: 30%;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.y1:hover {
+    transform: scale(1.05);
+}
+
+.y1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.y1 h3 {
+    font-size: 18px;
+    color: #222;
+    margin: 10px;
+}
+
+.y1 p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 10px 10px;
+}
+
+.y1 a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+}
+
+.y1 a:hover {
+    background: #0056b3;
+}
+
+@keyframes bosh {
+    0% { background-color: rgba(0, 0, 0, 0.3); }
+    100% { background-color: rgba(0, 0, 0, 0.6); }
+}
+
+@keyframes tekst {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+video {
+    display: block;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+video{
+    position: relative;
+    left: 280px;
+}
+@keyframes bosh {
+    0% { background-color: rgba(0, 0, 0, 0.3); }
+    100% { background-color: rgba(0, 0, 0, 0.6); }
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-image: url("images/stadion.webp");
+    background-blend-mode: multiply;
+    animation: bosh 3s infinite alternate;
+}
+
+@keyframes tekst {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.text h1, .text p {
+    animation: tekst 1s ease-in-out;
+}
+
+@keyframes pasgachiziq {
+    from { width: 0; }
+    to { width: 100%; }
+}
+/* Mobil va planshet versiyasi uchun o'zgartirishlar */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .text {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .rasm {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .rasm img {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .yangi11 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .y1 {
+        width: 90%;
+    }
+
+    video {
+        width: 90%;
+        left: 0;
+    }
+}
+/* Mobil va kichik ekranlar uchun header'ni kattalashtirish */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 200px; /* Header balandligini oshirish */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap; /* Menyu joylashishi uchun joy yetkazish */
+        justify-content: center;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+/* Telefonlar (kichik ekranlar) uchun */
+@media screen and (max-width: 768px) {
+    header {
+        height: 390px; /* Telefon uchun header'ni yanada kattalashtirish */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap; /* Menyu pastga tushib ketmasligi uchun */
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
